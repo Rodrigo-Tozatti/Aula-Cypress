@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('Cadastro-usuario', (usuario, senha) => {
+    it('Cadastrar usuario com sucesso', () => {
+        cy.get('#reg_email').type(usuario)
+        cy.get('#reg_password').type(senha)
+        cy.get(':nth-child(4) > .button').click()
+    
+        cy.get('.page-title').should('contain', 'Minha conta')
+      });
+    
+
+})

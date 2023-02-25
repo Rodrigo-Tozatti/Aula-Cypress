@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Rodrigo-Tozatti/Aula-Cypress#readme",
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "cypress": "^12.5.1"
   }
 }
